@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Beverages", "ACME.Beverages\ACME.Beverages.csproj", "{63EA5901-B884-4410-9282-849F6F268C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.UI.ConsoleClient", "ACME.UI.ConsoleClient\ACME.UI.ConsoleClient.csproj", "{4FD2AC1A-4425-470F-8941-37431FAAAAB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63EA5901-B884-4410-9282-849F6F268C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EA5901-B884-4410-9282-849F6F268C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EA5901-B884-4410-9282-849F6F268C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EA5901-B884-4410-9282-849F6F268C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD2AC1A-4425-470F-8941-37431FAAAAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD2AC1A-4425-470F-8941-37431FAAAAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD2AC1A-4425-470F-8941-37431FAAAAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD2AC1A-4425-470F-8941-37431FAAAAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1694C63-2BAF-4697-BEC2-614AB2C67B88}
+	EndGlobalSection
+EndGlobal
