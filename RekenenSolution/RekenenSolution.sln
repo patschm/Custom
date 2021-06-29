@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekenen", "Rekenen\Rekenen.csproj", "{67078A03-CAF8-40B0-BA1B-4ACFF9BA5AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRadio", "DeRadio\DeRadio.csproj", "{24A738C9-D5E9-43C3-B15F-7025ABE5A5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{3CA6F3E4-B4BD-4507-8C90-340E064EC9F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67078A03-CAF8-40B0-BA1B-4ACFF9BA5AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67078A03-CAF8-40B0-BA1B-4ACFF9BA5AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67078A03-CAF8-40B0-BA1B-4ACFF9BA5AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67078A03-CAF8-40B0-BA1B-4ACFF9BA5AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A738C9-D5E9-43C3-B15F-7025ABE5A5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A738C9-D5E9-43C3-B15F-7025ABE5A5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A738C9-D5E9-43C3-B15F-7025ABE5A5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A738C9-D5E9-43C3-B15F-7025ABE5A5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA6F3E4-B4BD-4507-8C90-340E064EC9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA6F3E4-B4BD-4507-8C90-340E064EC9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA6F3E4-B4BD-4507-8C90-340E064EC9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA6F3E4-B4BD-4507-8C90-340E064EC9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {601148A7-689F-45FC-BA80-37F19D0E6618}
+	EndGlobalSection
+EndGlobal
