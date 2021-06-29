@@ -1,0 +1,18 @@
+﻿using IEEE;
+using System;
+
+namespace Heras
+{
+    public class Hek: IDetectable
+    {
+        public void Activate()
+        {
+            Open();
+        }
+
+        public void Open()
+        {
+            Console.WriteLine("Het het gaat open");
+        }
+    }
+}
