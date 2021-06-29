@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefGen", "RefGen\RefGen.csproj", "{5967955B-13CF-445C-B82C-A6F3A6786CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vullis", "Vullis\Vullis.csproj", "{C24B98CE-54F4-4CFA-8AFA-7D8447A264E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stress", "Stress\Stress.csproj", "{65F2125E-832A-47C2-A4CD-BC8E5C458AFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5967955B-13CF-445C-B82C-A6F3A6786CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5967955B-13CF-445C-B82C-A6F3A6786CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5967955B-13CF-445C-B82C-A6F3A6786CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5967955B-13CF-445C-B82C-A6F3A6786CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24B98CE-54F4-4CFA-8AFA-7D8447A264E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24B98CE-54F4-4CFA-8AFA-7D8447A264E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24B98CE-54F4-4CFA-8AFA-7D8447A264E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24B98CE-54F4-4CFA-8AFA-7D8447A264E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F2125E-832A-47C2-A4CD-BC8E5C458AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F2125E-832A-47C2-A4CD-BC8E5C458AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F2125E-832A-47C2-A4CD-BC8E5C458AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F2125E-832A-47C2-A4CD-BC8E5C458AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEFF4C1C-DBB9-438B-9448-DCC13A9D6F18}
+	EndGlobalSection
+EndGlobal

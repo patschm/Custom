@@ -9,8 +9,13 @@ namespace Braka
     public class DetectieLus
     {
         private List<IDetectable> devices = new List<IDetectable>();
+        private List<DetectHandler> devices2 = new List<DetectHandler>();
         public event DetectHandler Detecting;
 
+        public void Connect(DetectHandler device)
+        {
+            devices2.Add(device);
+        }
         public void Connect(IDetectable device)
         {
             devices.Add(device);
