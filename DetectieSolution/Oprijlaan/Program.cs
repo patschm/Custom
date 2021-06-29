@@ -23,6 +23,8 @@ namespace Oprijlaan
             lus.Detecting += tl.Aan;
             lus.Detecting += kuil.OpenDoor;
 
+
+            //lus.Connect(tl.Aan);
             lus.Detect();
 
         }
