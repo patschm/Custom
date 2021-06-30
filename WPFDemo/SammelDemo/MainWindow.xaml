@@ -29,7 +29,29 @@
         <TextBlock Grid.Row="2" Grid.Column="1" FontSize="24" Text="{Binding ElementName=txt1, Path=Text}">
         </TextBlock>
         <Canvas Grid.Column="1" Grid.Row="1">
-            <Button Canvas.Top="50" Canvas.Left="50" Height="30" Width="200">Inner</Button>
+            <Button Canvas.Top="0" Canvas.Left="0" Height="300" Width="400">
+                <Button.Content>
+                    <MediaElement Source="WildLife.wmv"></MediaElement>
+                </Button.Content>
+                <Button.RenderTransform>
+                    <RotateTransform x:Name="rot" Angle="0" CenterX="150" CenterY="200"></RotateTransform>
+                </Button.RenderTransform>
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation 
+                                        Storyboard.TargetName="rot" 
+                                        Storyboard.TargetProperty="Angle"
+                                        From="0"
+                                        To="360"
+                                        Duration="0:0:0:5"
+                                        RepeatBehavior="Forever"></DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
         </Canvas>
     </Grid>
 </Window>

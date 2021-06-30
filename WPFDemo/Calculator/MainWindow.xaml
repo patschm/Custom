@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="800">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="28"></Setter>
@@ -40,9 +40,22 @@
 
         <TextBlock Grid.Row="0">A</TextBlock>
         <TextBlock Grid.Row="1">B</TextBlock>
-        <TextBox x:Name="txtA" Grid.Row="0" Grid.Column="1" ></TextBox>
-        <TextBox x:Name="txtB" Grid.Row="1" Grid.Column="1" ></TextBox>
-        <TextBlock x:Name="lblAnswer" Grid.Row="2" Grid.ColumnSpan="2"></TextBlock>
-        <Button Grid.Column="2" Grid.Row="1" Style="{Binding Source={StaticResource calcButton}}">+</Button>
+        <TextBox Text="{Binding Path=A}" x:Name="txtA" Grid.Row="0" Grid.Column="1" ></TextBox>
+        <TextBox Text="{Binding Path=B}" x:Name="txtB" Grid.Row="1" Grid.Column="1" ></TextBox>
+        <TextBlock Text="{Binding Path=Answer}" x:Name="lblAnswer" Grid.Row="2" Grid.ColumnSpan="2"></TextBlock>
+        <Button Command="{Binding Path=CommandPlus}" Grid.Column="2" Grid.Row="1" Style="{Binding Source={StaticResource calcButton}}">+</Button>
+        <ListView Grid.Row="3" Grid.ColumnSpan="3" ItemsSource="{Binding Path=History}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding Path=A}"></TextBox>
+                        <TextBlock>+</TextBlock>
+                        <TextBlock Text="{Binding Path=B}"></TextBlock>
+                        <TextBlock>=</TextBlock>
+                        <Button Content="{Binding Path=Answer}"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>
