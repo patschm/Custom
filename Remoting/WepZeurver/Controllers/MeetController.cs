@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using WepZeurver.Services;
 
 namespace WepZeurver.Controllers
 {
@@ -12,7 +15,12 @@ namespace WepZeurver.Controllers
     public class MeetController : ControllerBase
     {
        private static List<MeetResult> metingen = new List<MeetResult>();
+        private IHubContext<ZeurService> hubby;
 
+        public MeetController(IHubContext<ZeurService> svc)
+        {
+            hubby = svc;
+        }
         static MeetController()
         {
             metingen.Add(new MeetResult
@@ -37,8 +45,10 @@ namespace WepZeurver.Controllers
 
         [Route("add")]
         [HttpPost]
+       // [Authorize]
         public IActionResult AddMeting([FromBody]MeetResult meting)
         {
+            hubby.Clients.All.SendAsync("toeter", "Nieuwe Data");
             metingen.Add(meting);
             return Created("Blabla", 1);
         }

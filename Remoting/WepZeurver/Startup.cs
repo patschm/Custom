@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WepZeurver.Services;
 
 namespace WepZeurver
 {
@@ -34,6 +35,7 @@ namespace WepZeurver
             //services.AddSingleton<IFileProvider>(compositeProvider);
             #endregion
 
+            services.AddSignalR();
             services.AddControllers();
         }
 
@@ -49,6 +51,7 @@ namespace WepZeurver
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ZeurService>("/zeur");
                 endpoints.MapDefaultControllerRoute();
             });
         }

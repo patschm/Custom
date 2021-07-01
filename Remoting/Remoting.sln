@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepZeurver", "WepZeurver\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F6399143-005C-46A5-9DF6-B99B4ED73305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheClient", "TheClient\TheClient.csproj", "{13F7FBAC-22E8-4E2B-B381-E0D76FFFD326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalClient", "SignalClient\SignalClient.csproj", "{4FFF8B72-C3A0-4C1F-84AD-4724AB1DC8C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F6399143-005C-46A5-9DF6-B99B4ED73305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6399143-005C-46A5-9DF6-B99B4ED73305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6399143-005C-46A5-9DF6-B99B4ED73305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F7FBAC-22E8-4E2B-B381-E0D76FFFD326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F7FBAC-22E8-4E2B-B381-E0D76FFFD326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F7FBAC-22E8-4E2B-B381-E0D76FFFD326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F7FBAC-22E8-4E2B-B381-E0D76FFFD326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FFF8B72-C3A0-4C1F-84AD-4724AB1DC8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFF8B72-C3A0-4C1F-84AD-4724AB1DC8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFF8B72-C3A0-4C1F-84AD-4724AB1DC8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFF8B72-C3A0-4C1F-84AD-4724AB1DC8C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
