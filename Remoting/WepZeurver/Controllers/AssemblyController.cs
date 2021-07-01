@@ -24,6 +24,7 @@ namespace WepZeurver.Controllers
         {
             //var stream = File.Open()
             IFileInfo inf = _fileProvider.GetFileInfo("Resources/OnderWater.dll");
+            
             return File(inf.CreateReadStream(), "application/octet-stream");
         }
     }

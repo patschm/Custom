@@ -25,16 +25,9 @@ namespace WepZeurver
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            #region snippet1
-            //var physicalProvider = _env.ContentRootFileProvider;
-            //var manifestEmbeddedProvider =
-            //    new ManifestEmbeddedFileProvider(typeof(Program).Assembly);
-            //var compositeProvider =
-            //    new CompositeFileProvider(physicalProvider, manifestEmbeddedProvider);
-
-            //services.AddSingleton<IFileProvider>(compositeProvider);
-            #endregion
-
+            var physicalProvider = _env.ContentRootFileProvider;
+            services.AddSingleton<IFileProvider>(physicalProvider);
+          
             services.AddSignalR();
             services.AddControllers();
         }
