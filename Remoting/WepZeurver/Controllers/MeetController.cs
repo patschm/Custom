@@ -40,6 +40,7 @@ namespace WepZeurver.Controllers
         [Route("results")]
         public IActionResult Metingen()
         {
+            Console.WriteLine("Results");
             return Ok(metingen);
         }
 

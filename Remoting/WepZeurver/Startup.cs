@@ -40,6 +40,7 @@ namespace WepZeurver
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseBlaMiddleware();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

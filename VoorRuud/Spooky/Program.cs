@@ -24,8 +24,9 @@ namespace Spooky
 
             //Assembly asm = Assembly.LoadFrom(@"D:\Onderwater.dll");
             Type tesType = asm.GetType("OnderWater.Test");
+            //dynamic obj = Activator.CreateInstance(tesType);
+            //Task<int> res = obj.DoeIets();
             object obj = Activator.CreateInstance(tesType);
-
             MethodInfo dimethod = tesType.GetMethod("DoeIets");
             Task<int> res = dimethod.Invoke(obj, new object[] { }) as Task<int>;
             Console.WriteLine(await res);
